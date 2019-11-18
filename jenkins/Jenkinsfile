@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'maven:3-alpine'
+            image 'zuorn/maven-alpine'
             args '--mount type=bind,source=/Users/zuorn/.m2,target=/root/.m2'
         }
     }
